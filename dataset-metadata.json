@@ -1,0 +1,8 @@
+{
+  "title": "Bluesky Firehose: Anonymized Posts (Dec 2025)",
+  "id": "lucassteuber/bsky-firehose-anonymized-dec-2025",
+  "subtitle": "101,040 Bluesky posts (Dec 2-25, 2025), SHA-256 anonymized, with VADER sentiment and language detection",
+  "description": "## Dataset Overview\n\n[Live Collection View](https://dr.eamer.dev/bluesky/firehose/)\n\n- Collection Period: December 2-25, 2025\n- Source: Bluesky social media posts via the AT Protocol firehose\n- Anonymization: All author identifiers anonymized using SHA-256 hashing\n\n## Data Included\n\n- Post Text\n- Sentiment Scores: VADER\n- Detected Languages: 90 languages\n- Thread Structure: Reply chains preserved via hashes\n- Media Flags\n- Embed Types\n- Hashtags\n- Mentions\n- External Links\n\n## Data Excluded\n\n- Engagement Metrics: Likes, reposts, reply counts (stored separately in user repositories)\n\n### Use Cases\n\n- Sentiment Analysis\n- Multilingual NLP\n- Temporal Patterns\n- Content Analysis\n- Language Modeling\n- Thread Structure Analysis\n\n### Author Demographics\n\n- Unique Authors: 43,998\n- Language Distribution:\n  - 60% English\n  - 12% Japanese\n  - 11% Unknown\n  - 4% en-US\n  - 2% Korean",
+  "keywords": ["bluesky", "social-media", "sentiment", "nlp", "at-protocol", "anonymized"],
+  "licenses": [{"name": "CC-BY-4.0"}]
+}

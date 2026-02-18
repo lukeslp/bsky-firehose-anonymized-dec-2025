@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "last_updated": "2026-01-20T00:41:03.582601Z",
+  "fields": [
+    {
+      "name": "text",
+      "type": "string",
+      "description": "Post content (original text)",
+      "nullable": false
+    },
+    {
+      "name": "author_did_hash",
+      "type": "string",
+      "description": "Anonymized author DID (SHA-256, 16 chars)",
+      "nullable": false,
+      "anonymized": true
+    },
+    {
+      "name": "uri_hash",
+      "type": "string",
+      "description": "Anonymized post URI (SHA-256, 16 chars)",
+      "nullable": false,
+      "anonymized": true
+    },
+    {
+      "name": "reply_parent_hash",
+      "type": "string",
+      "description": "Anonymized parent post URI if reply (SHA-256, 16 chars)",
+      "nullable": true,
+      "anonymized": true
+    },
+    {
+      "name": "reply_root_hash",
+      "type": "string",
+      "description": "Anonymized root post URI if in thread (SHA-256, 16 chars)",
+      "nullable": true,
+      "anonymized": true
+    },
+    {
+      "name": "sentiment",
+      "type": "string",
+      "description": "Sentiment classification (positive, negative, neutral)",
+      "nullable": false,
+      "values": [
+        "positive",
+        "negative",
+        "neutral"
+      ]
+    },
+    {
+      "name": "sentiment_score",
+      "type": "float",
+      "description": "VADER compound score (-1.0 to 1.0)",
+      "nullable": false,
+      "range": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "name": "created_at",
+      "type": "string",
+      "description": "Post creation timestamp (ISO 8601)",
+      "nullable": false,
+      "format": "ISO 8601"
+    },
+    {
+      "name": "timestamp",
+      "type": "string",
+      "description": "Ingestion timestamp (ISO 8601)",
+      "nullable": false,
+      "format": "ISO 8601"
+    },
+    {
+      "name": "language",
+      "type": "string",
+      "description": "Detected language code (ISO 639-1)",
+      "nullable": false
+    },
+    {
+      "name": "char_count",
+      "type": "integer",
+      "description": "Character count",
+      "nullable": false
+    },
+    {
+      "name": "word_count",
+      "type": "integer",
+      "description": "Word count",
+      "nullable": false
+    },
+    {
+      "name": "has_images",
+      "type": "boolean",
+      "description": "Post contains images",
+      "nullable": false
+    },
+    {
+      "name": "has_video",
+      "type": "boolean",
+      "description": "Post contains video",
+      "nullable": false
+    },
+    {
+      "name": "has_link",
+      "type": "boolean",
+      "description": "Post contains external links",
+      "nullable": false
+    },
+    {
+      "name": "embed_type",
+      "type": "string",
+      "description": "Embed type if present",
+      "nullable": true
+    },
+    {
+      "name": "hashtags",
+      "type": "string",
+      "description": "JSON array of hashtags",
+      "nullable": true,
+      "format": "JSON array"
+    },
+    {
+      "name": "mentions",
+      "type": "string",
+      "description": "JSON array of mentions (anonymized DIDs)",
+      "nullable": true,
+      "format": "JSON array",
+      "anonymized": true
+    },
+    {
+      "name": "links",
+      "type": "string",
+      "description": "JSON array of external links",
+      "nullable": true,
+      "format": "JSON array"
+    }
+  ]
+}
