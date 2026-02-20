@@ -153,6 +153,14 @@ This dataset complies with Bluesky Developer Guidelines:
 }
 ```
 
+## Bluesky Ecosystem
+
+More Bluesky tools by Luke Steuber:
+
+- [bluedrop](https://github.com/lukeslp/bluedrop) — browser extension for DMs, Zen Mode, and dark mode
+- [skymarshal](https://github.com/lukeslp/skymarshal) — Python CLI for post and comment management
+- [skymarshal-js](https://github.com/lukeslp/skymarshal-js) — TypeScript/JS toolkit for AT Protocol
+
 ## License
 
 CC-BY-4.0 (Creative Commons Attribution 4.0 International). Free to share and adapt with attribution to Luke Steuber.
